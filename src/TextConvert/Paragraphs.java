@@ -29,10 +29,10 @@ public class Paragraphs {
         try {
             File file=new File(filename);
             Scanner scanner = new Scanner(file);
+
             StringBuilder currentParagraph = new StringBuilder();
             while (scanner.hasNext()) {
                 String currentLine = scanner.nextLine();
-                System.out.println(currentLine);
                 if (currentLine.isEmpty()) {
                     paragraphs.add(currentParagraph.toString().trim());
                     System.out.println(currentParagraph);
