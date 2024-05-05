@@ -56,8 +56,10 @@ public class AddressBook {
             for(String name:nameSet){
                 StringBuilder currentLine=new StringBuilder(name);
                 for(String email:this.address.get(name)){
-
+                    currentLine.append(";");
+                    currentLine.append(email);
                 }
+                fileWriter.write(currentLine.toString());
             }
 
             fileWriter.close();
