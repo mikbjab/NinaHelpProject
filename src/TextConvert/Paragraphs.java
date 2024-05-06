@@ -81,4 +81,10 @@ public class Paragraphs {
         return Objects.hash(paragraphs);
     }
 
+    @Override
+    public String toString() {
+        return "Paragraphs{" +
+                "paragraphs=" + paragraphs +
+                '}';
+    }
 }
